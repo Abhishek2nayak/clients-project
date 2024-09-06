@@ -456,170 +456,81 @@
     </footer>
 
     <!-- Script  -->
-
-    <script src="./bootstrap-5.3/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="./bootstrap-5.3/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script>
-      AOS.init({
-        disable: function () {
-          var maxWidth = 991.98;
-          return window.innerWidth < maxWidth;
-        },
-      });
-    </script>
 
     <script>
-      $(".owl-one").owlCarousel({
-        stagePadding: 50,
-        loop: true,
-        margin: 28,
-        dots: false,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 1500,
-        autoplayHoverPause: false,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 3,
-          },
-          1000: {
-            items: 3,
-          },
-        },
-      });
-      $(".owl-two").owlCarousel({
-        loop: true,
-        dots: false,
-        nav: true,
-        navText: [
-          ' <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-left"><circle cx="12" cy="12" r="10"/><path d="m14 16-4-4 4-4"/></svg> ',
-          ' <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-right"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg> ',
-        ],
-        autoplay: false,
-        autoplayTimeout: 1500,
-        autoplayHoverPause: false,
-        animateOut: "fadeOut",
-        smartSpeed: 1000,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 1,
-          },
-          1000: {
-            items: 1,
-          },
-        },
-      });
-      owl.on("mousewheel", ".owl-stage", function (e) {
-        if (e.deltaY > 0) {
-          owl.trigger("next.owl");
-        } else {
-          owl.trigger("prev.owl");
-        }
-        e.preventDefault();
-      });
-    </script>
-    <script>
-      (() => {
-        const counter = document.querySelectorAll(".counter1");
-        // covert to array
-        const array = Array.from(counter);
-        // select array element
-        array.map((item) => {
-          // data layer
-          let counterInnerText = item.textContent;
-          let count = 1;
-          let speed = item.dataset.speed / counterInnerText;
-          function counterUp() {
-            item.textContent = count++;
-            if (counterInnerText < count) {
-              clearInterval(stop);
-            }
-          }
-          const stop = setInterval(() => {
-            counterUp();
-          }, 1);
+        // Initialize AOS with a responsive disable option
+        AOS.init({
+            disable: function () {
+                var maxWidth = 991.98;
+                return window.innerWidth < maxWidth;
+            },
         });
-      })();
     </script>
+
     <script>
-      (() => {
-        const counter = document.querySelectorAll(".counter2");
-        // covert to array
-        const array = Array.from(counter);
-        // select array element
-        array.map((item) => {
-          // data layer
-          let counterInnerText = item.textContent;
-          let count = 1;
-          let speed = item.dataset.speed / counterInnerText;
-          function counterUp() {
-            item.textContent = count++;
-            if (counterInnerText < count) {
-              clearInterval(stop);
-            }
-          }
-          const stop = setInterval(() => {
-            counterUp();
-          }, 600);
+        // Initialize OwlCarousel
+        $(".owl-one").owlCarousel({
+            stagePadding: 50,
+            loop: true,
+            margin: 28,
+            dots: false,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 3,
+                },
+                1000: {
+                    items: 3,
+                },
+            },
         });
-      })();
-    </script>
-    <script>
-      (() => {
-        const counter = document.querySelectorAll(".counter3");
-        // covert to array
-        const array = Array.from(counter);
-        // select array element
-        array.map((item) => {
-          // data layer
-          let counterInnerText = item.textContent;
-          let count = 1;
-          let speed = item.dataset.speed / counterInnerText;
-          function counterUp() {
-            item.textContent = count++;
-            if (counterInnerText < count) {
-              clearInterval(stop);
-            }
-          }
-          const stop = setInterval(() => {
-            counterUp();
-          }, 40);
+
+        $(".owl-two").owlCarousel({
+            loop: true,
+            dots: false,
+            nav: true,
+            navText: [
+                ' <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-left"><circle cx="12" cy="12" r="10"/><path d="m14 16-4-4 4-4"/></svg> ',
+                ' <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-right"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg> ',
+            ],
+            autoplay: false,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: false,
+            animateOut: "fadeOut",
+            smartSpeed: 1000,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 1,
+                },
+                1000: {
+                    items: 1,
+                },
+            },
         });
-      })();
-    </script>
-    <script>
-      const image = document.querySelector(".why-img");
 
-      image.addEventListener("mousemove", (event) => {
-        const { top, bottom, left, right } =
-          event.target.getBoundingClientRect();
-
-        const middleX = (right - left) / 2;
-        const middleY = (bottom - top) / 2;
-
-        const clientX = event.clientX;
-        const clientY = event.clientY;
-
-        const offsetX = (clientX - middleX) / middleX;
-        const offsetY = (middleY - clientY) / middleY;
-
-        event.target.style.transform = `perspective(1000px) rotateY(${
-          offsetX * 6
-        }deg) rotateX(${offsetY * 6}deg) scale3d(1, 1, 1)`;
-      });
+        // OwlCarousel mousewheel support
+        $(".owl-two").on("mousewheel", ".owl-stage", function (e) {
+            if (e.deltaY > 0) {
+                $(this).trigger("next.owl");
+            } else {
+                $(this).trigger("prev.owl");
+            }
+            e.preventDefault();
+        });
     </script>
   </body>
 </html>

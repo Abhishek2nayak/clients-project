@@ -21,7 +21,7 @@
   --white: #ffffff;
   --blue: #063e92;
   --orange: #eea11b;
-  --dark-blue : #063E92;
+  --dark-blue: #063e92;
 }
 
 a {
@@ -42,7 +42,6 @@ a {
 .text-white {
   color: var(--white);
 }
-
 
 .text-grey {
   color: grey;
@@ -115,8 +114,6 @@ a {
 .btn-calc {
   border: 2px solid var(--blue);
 }
-
-
 
 .nav-link {
   font-size: 20px;
@@ -2495,13 +2492,13 @@ footer.main-section {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
-  
+
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
   width: 50px;
   height: 50px;
- 
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2554,7 +2551,6 @@ footer.main-section {
 }
 .core-values-section h1 {
   color: var(--orange);
-  
 }
 
 .core-values-section .container div {
@@ -2652,8 +2648,8 @@ footer.main-section {
 }
 
 .team-member h4 {
- font-weight: 600;
- text-align: start;
+  font-weight: 600;
+  text-align: start;
 }
 .team-member p {
   text-align: start;
@@ -2664,7 +2660,6 @@ footer.main-section {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-
 
 .contact-section {
   background-color: var(--dark-blue);
@@ -2686,7 +2681,7 @@ footer.main-section {
 }
 
 .whatsapp-button {
-  background-color: #25D366;
+  background-color: #25d366;
   color: white;
   border-radius: 16px;
   padding: 10px 20px;
@@ -2709,15 +2704,12 @@ footer.main-section {
   font-size: 24px;
 }
 
-
 /** Blog Page **/
 
 .blog-search-section {
-  
   height: 200px;
   background-color: rgba(75, 85, 95, 0.2);
   padding: 0 50px;
-  
 }
 
 .blog-search-section h1 {
@@ -2739,7 +2731,7 @@ footer.main-section {
 }
 
 .more-blog {
-  margin: 100px 0 ;
+  margin: 100px 0;
 }
 .blogs-container {
   margin: 100px 0;
@@ -2759,7 +2751,6 @@ footer.main-section {
 .search-input::placeholder {
   padding-left: 0;
   color: rgba(17, 17, 17, 0.5);
-
 }
 
 .blog-card a:hover {
@@ -2903,7 +2894,6 @@ footer.main-section {
 
 .carousel-control-prev,
 .carousel-control-next {
-  
   padding: 15px;
   border-radius: 100%;
   width: 10px;
@@ -2963,30 +2953,26 @@ footer.main-section {
   border-radius: 10px;
 }
 
-.accordion-header{
+.accordion-header {
   border-radius: 50px;
 }
 
 .accordion-button {
-  background-color:rgba(249, 249, 249, 1)  ;
+  background-color: rgba(249, 249, 249, 1);
   border-radius: 10px !important;
   font-weight: bold;
-
 }
 
 .accordion-button::after {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNpcmNsZS1jaGV2cm9uLWRvd24iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0ibTE2IDEwLTQgNC00LTQiLz48L3N2Zz4=);
-
 }
 
-.accordion-button:not(.collapsed)::after  {
+.accordion-button:not(.collapsed)::after {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNpcmNsZS1jaGV2cm9uLWRvd24iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0ibTE2IDEwLTQgNC00LTQiLz48L3N2Zz4=);
-
 }
 .accordion-collapse {
   background-color: rgba(249, 249, 249, 1);
   border-radius: 0 0 10px 10px;
-
 }
 
 .schedule-call-hero {
@@ -2995,7 +2981,6 @@ footer.main-section {
   align-items: center;
   padding: 50px 0;
   margin: 100px 0;
-
 }
 
 .schedule-call-hero h1,
@@ -3024,15 +3009,15 @@ footer.main-section {
 }
 
 .schedule-call-hero .card-container div span {
-   width: 30px;
-   height: 30px;
-   background-color: rgba(188, 184, 184, 0.3);
-   padding: 30px;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(188, 184, 184, 0.3);
+  padding: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .schedule-call-hero .card-container div span img {
   width: 20px;
@@ -3063,12 +3048,10 @@ footer.main-section {
   border-radius: 20px;
 }
 
-
 .top-fields {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 
 .dot {
   width: 5px;
@@ -3078,14 +3061,13 @@ footer.main-section {
   margin-right: 10px;
 }
 
-
 .blue-top {
   width: 100%;
   height: 30px;
   background-color: var(--blue);
 }
 
-.video-container img{
+.video-container img {
   /* filter: brightness(40%); */
 }
 
@@ -3096,5 +3078,104 @@ footer.main-section {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+}
 
+@media screen and (max-width: 1000px) {
+  .solution-hero,
+  .solution-info,
+  .rooftop-container,
+  .testmonials {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .testmonials-container {
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .team1 img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  #carouselExampleCaptions {
+    width: 50vw;
+    height: 200px;
+  }
+
+  .solution-hero .right img {
+    height: 300px;
+  }
+  .solution-info .right {
+    padding: 0;
+  }
+
+  .blog-search-section {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .custom-heading,
+  .certification-section div:nth-child(1) h3 {
+    font-size: 33px;
+  }
+  .custom-subheading {
+    font-size: 28px;
+  }
+
+  .core-values-section {
+    padding-top: 10px !important;
+  }
+
+  .core-values-section h1 {
+    padding-top: 20px;
+  }
+  .certification-section {
+    /* background-color: green; */
+    flex-wrap: wrap;
+  }
+  .certification-section img {
+    width: auto;
+  }
+  .certification-section .certi-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .certification-section div:nth-child(1) h3 {
+    text-align: center;
+  }
+  .certification-section div:nth-child(1) p {
+    text-align: center;
+  }
+
+  .team-container {
+    grid-template-columns: 1fr;
+  }
+  .team-member img {
+    height: 300px;
+  }
+  .team-member {
+    gap: 20px;
+  }
+  .contact-section .container img {
+    right: -60%;
+  }
+  .contact-section {
+    overflow: hidden;
+  }
+  .schedule-call-hero .card-container {
+    flex-wrap: wrap;
+  }
+  .schedule-call-form form {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .top-fields {
+    display: grid !important;
+    grid-template-columns: 1fr;
+  }
 }

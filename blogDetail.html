@@ -470,17 +470,14 @@
     </footer>
 
     <!-- Script  -->
-
-    <script src="./bootstrap-5.3/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="./bootstrap-5.3/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
-        AOS.init();
-    </script>
-    <script>
+        // Initialize AOS with a responsive disable option
         AOS.init({
             disable: function () {
                 var maxWidth = 991.98;
@@ -490,6 +487,7 @@
     </script>
 
     <script>
+        // Initialize OwlCarousel
         $(".owl-one").owlCarousel({
             stagePadding: 50,
             loop: true,
@@ -511,6 +509,7 @@
                 },
             },
         });
+
         $(".owl-two").owlCarousel({
             loop: true,
             dots: false,
@@ -536,102 +535,15 @@
                 },
             },
         });
-        owl.on("mousewheel", ".owl-stage", function (e) {
+
+        // OwlCarousel mousewheel support
+        $(".owl-two").on("mousewheel", ".owl-stage", function (e) {
             if (e.deltaY > 0) {
-                owl.trigger("next.owl");
+                $(this).trigger("next.owl");
             } else {
-                owl.trigger("prev.owl");
+                $(this).trigger("prev.owl");
             }
             e.preventDefault();
-        });
-    </script>
-    <script>
-        (() => {
-            const counter = document.querySelectorAll(".counter1");
-            // covert to array
-            const array = Array.from(counter);
-            // select array element
-            array.map((item) => {
-                // data layer
-                let counterInnerText = item.textContent;
-                let count = 1;
-                let speed = item.dataset.speed / counterInnerText;
-                function counterUp() {
-                    item.textContent = count++;
-                    if (counterInnerText < count) {
-                        clearInterval(stop);
-                    }
-                }
-                const stop = setInterval(() => {
-                    counterUp();
-                }, 1);
-            });
-        })();
-    </script>
-    <script>
-        (() => {
-            const counter = document.querySelectorAll(".counter2");
-            // covert to array
-            const array = Array.from(counter);
-            // select array element
-            array.map((item) => {
-                // data layer
-                let counterInnerText = item.textContent;
-                let count = 1;
-                let speed = item.dataset.speed / counterInnerText;
-                function counterUp() {
-                    item.textContent = count++;
-                    if (counterInnerText < count) {
-                        clearInterval(stop);
-                    }
-                }
-                const stop = setInterval(() => {
-                    counterUp();
-                }, 600);
-            });
-        })();
-    </script>
-    <script>
-        (() => {
-            const counter = document.querySelectorAll(".counter3");
-            // covert to array
-            const array = Array.from(counter);
-            // select array element
-            array.map((item) => {
-                // data layer
-                let counterInnerText = item.textContent;
-                let count = 1;
-                let speed = item.dataset.speed / counterInnerText;
-                function counterUp() {
-                    item.textContent = count++;
-                    if (counterInnerText < count) {
-                        clearInterval(stop);
-                    }
-                }
-                const stop = setInterval(() => {
-                    counterUp();
-                }, 40);
-            });
-        })();
-    </script>
-    <script>
-        const image = document.querySelector(".why-img");
-
-        image.addEventListener("mousemove", (event) => {
-            const { top, bottom, left, right } =
-                event.target.getBoundingClientRect();
-
-            const middleX = (right - left) / 2;
-            const middleY = (bottom - top) / 2;
-
-            const clientX = event.clientX;
-            const clientY = event.clientY;
-
-            const offsetX = (clientX - middleX) / middleX;
-            const offsetY = (middleY - clientY) / middleY;
-
-            event.target.style.transform = `perspective(1000px) rotateY(${offsetX * 6
-                }deg) rotateX(${offsetY * 6}deg) scale3d(1, 1, 1)`;
         });
     </script>
 </body>
